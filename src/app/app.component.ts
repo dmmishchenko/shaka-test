@@ -10,6 +10,7 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
 })
 export class AppComponent {
   hlsUrl = 'http://localhost:3000/assets/master.m3u8';
+  // working hls url
   // hlsUrl = 'https://test-streams.mux.dev/tos_ismc/main.m3u8';
   dashUrl = 'http://localhost:3000/assets/manifest.mpd';
 }
