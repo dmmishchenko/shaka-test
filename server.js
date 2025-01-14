@@ -16,6 +16,9 @@ app.use('/assets', (req, res, next) => {
     } else if (req.path.endsWith('.mpd')) {
         res.set('Content-Type', 'application/dash+xml');
     }
+    else if (req.path.endsWith('.mp4')) {
+        res.set('Content-Type', 'video/mp4');
+    }
     next();
 }, express.static(path.join(__dirname, 'src/assets')));
 
