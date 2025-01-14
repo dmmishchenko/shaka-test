@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { VideoPlayerComponent } from './video-player/video-player.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [VideoPlayerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'shaka-test';
+  hlsUrl = 'http://localhost:3000/assets/master.m3u8';
+  // hlsUrl = 'https://test-streams.mux.dev/tos_ismc/main.m3u8';
+  dashUrl = 'http://localhost:3000/assets/manifest.mpd';
 }
